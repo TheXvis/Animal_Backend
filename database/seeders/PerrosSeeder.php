@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Perromodel;
 use Illuminate\Database\Seeder;
+use App\Http\Controllers\PerroController;
 
 class PerrosSeeder extends Seeder
 {
@@ -19,7 +20,7 @@ class PerrosSeeder extends Seeder
             'raza' => 'Labrador',
             'edad' => 3,
             'descripcion' => 'perrito kawai',
-            'url' => 'http://example.com/image.jpg',
+            'url' => PerroController::imagenRandom(),
         ]);
         
         Perromodel::create([
@@ -27,7 +28,7 @@ class PerrosSeeder extends Seeder
             'raza' => 'Golden Retriever',
             'edad' => 5,
             'descripcion' => 'perrito kawai',
-            'url' => 'http://example.com/image.jpg',
+            'url' => PerroController::imagenRandom(),
         ]);
 
         Perromodel::create([
@@ -35,7 +36,7 @@ class PerrosSeeder extends Seeder
             'raza' => 'Beagle',
             'edad' => 2,
             'descripcion' => 'perrito kawai',
-            'url' => 'http://example.com/image.jpg',
+            'url' => PerroController::imagenRandom(),
         ]);
 
         Perromodel::create([
@@ -43,7 +44,7 @@ class PerrosSeeder extends Seeder
             'raza' => 'Pug',
             'edad' => 3,
             'descripcion' => 'perrito kawai',
-            'url' => 'http://example.com/image.jpg',
+            'url' => PerroController::imagenRandom(),
         ]);
 
         Perromodel::create([
@@ -51,7 +52,7 @@ class PerrosSeeder extends Seeder
             'raza' => 'Mestizo',
             'edad' => 7,
             'descripcion' => 'perrito kawai',
-            'url' => 'http://example.com/image.jpg',
+            'url' => PerroController::imagenRandom(),
         ]);
     }
 };
